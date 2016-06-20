@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Advanced JavaScript: Assignment1.3</title>
+</head>
+<body>
+	<form action="#" method="post" onsubmit="<script>function abc{alert('123');}</script>">
+
+		Name:   <input type="text" id="name" name="name" onblur="(function(){
+				var field=document.getElementById('name'); 
+				if(field.value==null || field.value=='')
+				{
+				alert('Name field should not be left empty');
+				field.focus();
+				}
+				})();"><br><br>
+
+		Email:  <input type="text" name="email" id="email" onblur="(function(){
+				var field=document.getElementById('email'); 
+				var pattern=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+				if(!pattern.test(field.value))
+				{
+				alert('Invalid email address');
+				field.focus();
+				}
+				})();"><br><br>
+
+		Phone:  <input type="text" name="phone" id="phone" onblur="(function(){
+				var field=document.getElementById('phone'); 
+				if(field.value==null || field.value=='')
+				{
+				alert('Phone number field should not be left empty');
+				field.focus();
+				}
+				})();"><br><br>
+
+		Address: <br><textarea rows="5" cols="25"></textarea><br>
+		<input type="submit" id="button" value="Submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Advanced JavaScript: Assignment1.2</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+
+            var result = (function(email_id){
+                            var regpattern = /^[a-zA-Z_\.\-]+@[a-zA-Z_\-\.]+?\.[a-zA-Z]{2,4}$/;
+                            return regpattern.test(email_id);
+                        })('mayank.verma@newgen.co.in');
+            document.write(result);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

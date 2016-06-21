@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Advanced JavaScript1: Assignment1.5	</title>
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+		var x=prompt("Enter first number:");
+		var y=prompt("Enter second number:");
+		
+		function outer(num1,num2){
+			var result;
+			var a=num1;
+			var b=num2;
+
+			function inner(n1,n2){
+				return n1*n2;
+			}
+			result=inner(a,b);
+			alert("Product of " + a + " & " + b + " is : " + result);
+		}
+		outer(x,y);
+	</script>
+
+
+</body>
+</html>

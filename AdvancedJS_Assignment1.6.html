@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Advanced JavaScript1: Assignment1.6	</title>
+</head>
+<body>
+
+		<script type="text/javascript">
+
+			function Person(lastName, firstName,email,phone){ 
+				  this.lastName = lastName; 
+				  this.firstName = firstName; 
+				  this.email = email;
+				  this.phone = phone;
+			}
+
+			function appendinfo(){
+				var per=new Person();
+				var fname=prompt("Enter your first Name" );
+				per.firstName=fname;
+				var lname=prompt("Enter your last name" );
+				per.last_name=lname;
+				var mail=prompt("Enter your email" );
+				per.email=mail;
+				var phone=prompt("Enter your phone" );
+				per.phone=phone;
+
+				document.getElementById("first_name").innerHTML =per.firstName ;
+				document.getElementById("last_name").innerHTML = per.last_name ;
+				document.getElementById("email").innerHTML = per.email ;
+				document.getElementById("phone").innerHTML = per.phone;
+							
+			}
+	    </script>
+
+
+		 	<b>First Name :</b><p id="first_name"></p>
+		 	<b>Last Name :</b><p id="last_name"></p>
+			<b>E-mail :</b><p id="email"></p><br>
+			<b>Phone :</b><p id="phone"></p><br><br>
+
+			<button onclick="appendinfo()"> Click to Append Details !!!</button>
+
+
+</body>
+</html>
